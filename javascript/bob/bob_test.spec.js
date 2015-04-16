@@ -1,4 +1,14 @@
 var Bob = require('./bob.js');
+var Test = require('./test.js');
+
+describe("Test", function() {
+  var test = new Test();
+
+  it("works", function() {
+    var result = test.sup();
+    expect(result).toEqual("sup");
+  });
+});
 
 describe("Bob", function() {
   var bob = new Bob();
